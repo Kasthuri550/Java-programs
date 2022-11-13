@@ -22,3 +22,35 @@ System.out.println((char)i+" count is "+count[i]);
 }
 }
 }
+
+
+Write a Java program to check two strings are anagrams or not
+
+import java.util.*;
+class Anagrams
+{
+public static void main(String args[])
+{
+String str1,str2;
+Scanner sc=new Scanner(System.in);
+str1=sc.nextLine();
+str2=sc.nextLine();
+str1=str1.replace(" ","");
+str2=str2.replace(" ","");
+str1=str1.toLowerCase();
+str2=str2.toLowerCase();
+char a[]=str1.toCharArray();
+char b[]=str2.toCharArray();
+Arrays.sort(a);
+Arrays.sort(b);
+Boolean result=Arrays.equals(a,b);
+if(result)
+{
+System.out.println("Strings are anagrams");
+}
+else
+{
+System.out.println("Strings are not anagrams");
+}
+}
+}
