@@ -71,3 +71,23 @@ System.out.println("Number of words: "+count);
 
 Write a Java program to count the total number of occurrences of a given character in a string without using any loop
 
+import java.util.Scanner;
+class CountCharacterOccurrenceWithoutLoop
+{
+public static void main(String[] args)
+{
+String str;
+char c;
+int totalCount,countWithoutSpecificChar;
+Scanner sc=new Scanner(System.in);
+str=sc.nextLine();
+c=sc.next().charAt(0);
+totalCount=str.length();
+countWithoutSpecificChar=str.replace(Character.toString(c),"").length();
+System.out.println("Number of '"+c+"' Character: "+(totalCount-countWithoutSpecificChar));
+}
+}
+
+
+Write a Java program to reverse a string
+
