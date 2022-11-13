@@ -1,0 +1,24 @@
+Write a Java program to print duplicate characters from string
+
+import java.util.*;
+class DuplicateCharacters
+{
+public static void main(String args[])
+{
+String str1;
+int count[]=new int[256];
+Scanner sc=new Scanner(System.in);
+str1=sc.nextLine();
+for(int i=0;i<str1.length();i++)
+{
+count[str1.charAt(i)]++;
+}
+for(int i=0;i<256;i++)
+{
+if(count[i]>1)
+{
+System.out.println((char)i+" count is "+count[i]);
+}
+}
+}
+}
