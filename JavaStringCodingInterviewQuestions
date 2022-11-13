@@ -54,3 +54,20 @@ System.out.println("Strings are not anagrams");
 }
 }
 }
+
+
+Write a Java program to count the number of words in a string
+
+class CountNumberOfWords
+{
+public static void main(String args[])
+{
+String str1="We are proud Indians";
+int count=str1.split(" ").length;
+System.out.println("Number of words: "+count);
+}
+}
+
+
+Write a Java program to count the total number of occurrences of a given character in a string without using any loop
+
