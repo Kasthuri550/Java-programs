@@ -91,3 +91,34 @@ System.out.println("Number of '"+c+"' Character: "+(totalCount-countWithoutSpeci
 
 Write a Java program to reverse a string
 
+import java.util.Scanner;
+class ReverseString
+{
+public static void main(String[] args)
+{
+String original,rev="";
+Scanner sc=new Scanner(System.in);
+original=sc.nextLine();
+System.out.println("----Approach 1----");
+for(int i=original.length()-1;i>=0;i--)
+{
+rev=rev+original.charAt(i);
+}
+System.out.println("Reversed string is "+rev);
+System.out.println("----Approach 2----");
+StringBuffer buffer=new StringBuffer(original);
+rev=buffer.reverse().toString();
+System.out.println("Reversed string is "+rev);
+System.out.println("----Approach 3----");
+char c[]=original.toCharArray();
+for(int j=c.length-1;j>=0;j--)
+{
+	rev=rev+c[j];
+}
+System.out.println("Reversed string is "+rev);
+}
+}
+
+
+Write a Java program to remove all white spaces from a string
+
