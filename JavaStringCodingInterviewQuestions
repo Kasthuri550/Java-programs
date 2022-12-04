@@ -139,3 +139,36 @@ System.out.println("The modified string is "+str);
 
 
 Write a Java program to print first non-repeated character from string
+
+import java.io.*;
+import java.util.Scanner;
+class FirstNonRepeatedCharacterInAString
+{
+public static void main(String[] args)
+{
+char ch;
+String str;
+Scanner sc=new Scanner(System.in);
+System.out.print("Enter a string: ");
+str=sc.nextLine();
+for(int i=0;i<str.length();i++)
+{
+ch=str.charAt(i);
+boolean repeat=false;
+for(int j=i+1;j<str.length();j++)
+{
+if(ch==str.charAt(j))
+{
+//System.out.println("'"+ch+"' Repeated");
+repeat=true;
+break;
+}
+}
+if(repeat==false)
+{
+System.out.println("First non-repeated character is "+"'"+ch+"'");
+break;
+}
+}
+}
+}
