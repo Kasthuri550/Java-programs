@@ -122,3 +122,17 @@ System.out.println("Reversed string is "+rev);
 
 Write a Java program to remove all white spaces from a string
 
+import java.io.*;
+import java.util.Scanner;
+class RemoveWhiteSpacesInString
+{
+public static void main(String[] args)
+{
+String str;
+Scanner sc=new Scanner(System.in);
+System.out.print("Enter a String: ");
+str=sc.nextLine();
+str=str.replaceAll("\\s","");
+System.out.println("The modified string is "+str);
+}
+}
