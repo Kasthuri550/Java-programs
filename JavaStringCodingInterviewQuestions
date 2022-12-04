@@ -136,3 +136,6 @@ str=str.replaceAll("\\s","");
 System.out.println("The modified string is "+str);
 }
 }
+
+
+Write a Java program to print first non-repeated character from string
