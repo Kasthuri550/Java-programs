@@ -230,3 +230,7 @@ System.exit(0);
 System.out.println("Integer string");
 }
 }
+
+
+Write a java program to reverse a given string with preserving the position of spaces?
+
