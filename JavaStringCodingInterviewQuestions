@@ -173,4 +173,27 @@ break;
 }
 }
 
-How to reverse string in java using iteration and recursion?
+How to reverse string in java using recursion?
+
+import java.io.*;
+import java.util.Scanner;
+class ReverseStringInRecursion
+{
+public static void main(String[] args)
+{
+String str,revStr;
+Scanner sc=new Scanner(System.in);
+System.out.print("Enter a string: ");
+str=sc.nextLine();
+revStr=reverse(str);
+System.out.println("The reversed string is "+revStr);
+}
+private static String reverse(String str)
+{
+if(str==null||str.length()<=1)
+{
+return str;
+}
+return reverse(str.substring(1))+str.charAt(0);
+}
+}
