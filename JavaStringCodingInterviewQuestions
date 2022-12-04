@@ -173,6 +173,7 @@ break;
 }
 }
 
+
 How to reverse string in java using recursion?
 
 import java.io.*;
@@ -201,3 +202,31 @@ return reverse(str.substring(1))+str.charAt(0);
 
 How to check if a string contains only digits?
 
+import java.io.*;
+import java.util.Scanner;
+class StringContainsDigitsOrNot
+{
+public static void main(String[] args)
+{
+String str;
+int size,i=0;
+Scanner sc=new Scanner(System.in);
+System.out.print("Enter a string: ");
+str=sc.nextLine();
+size=str.length();
+char s[]=str.toCharArray();
+while(i!=size)
+{
+if(s[i]>='0'&&s[i]<='9')
+{
+i++;
+}
+else
+{
+System.out.println("Not an integer string");
+System.exit(0);
+}
+}
+System.out.println("Integer string");
+}
+}
